@@ -372,7 +372,7 @@ class CustomCompany(models.Model):
     touchdown_cloud_services_renewal_date = fields.Date("Touchdown Cloud Services Renewal Date")
     touchdown_install_date = fields.Date("Touchdown Install Date")
     unique_identifier = fields.Char("Unique Identifier")
-    vendor = fields.Selection(VENDOR, "Vendor")
+    bus_vendor = fields.Selection(VENDOR, "Bus Manufacturer")
     td_fleet_monitor = fields.Boolean('TD Fleet Monitor')
     web_technologies = fields.Many2many('res.partner_web_technologies', 'partner_id_web_technologies_id',
                                         'partner_id', 'web_technologies_id', 'Web Technologies')
