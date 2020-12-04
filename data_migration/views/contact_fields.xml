@@ -5,6 +5,12 @@
             <field name="model">res.partner</field>
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
+                <field name="vat" position="before">
+                </field>
+                <field name="function" position="after">
+                </field>
+                <field name="vat" position="after">
+                </field>
                 <xpath expr="//page[1]" position='before'>
                     <page string='Contact Information' autofocus='True' attrs="{'invisible':[('is_company','=',True)]}">
                         <group>
@@ -168,20 +174,7 @@
                         </group>
                     </page>
                 </xpath>
-                <field name="vat" position="before">
-                    <field name="first_name" attrs="{'invisible':[('is_company','=',True)]}"/>
-                    <field name="last_name" attrs="{'invisible':[('is_company','=',True)]}"/>
-                </field>
-                <field name="function" position="after">
-                    <field name="role" attrs="{'invisible':[('is_company','=',True)]}"/>
-                    <field name="job_title" attrs="{'invisible':[('is_company','=',True)]}"/>
-                </field>
-                <field name="vat" position="after">
-                    <field name="n247_dvr_total" />
-                    <field name="area_code" />
-                    <field name="territory" />
-                    <field name="special_instructions"/>
-                </field>
+
             </field>
         </record>
     </data>
