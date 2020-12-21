@@ -123,7 +123,6 @@ TOUCHDOWN_TYPE = [
 class ResPartnerField(models.Model):
 
      _inherit = 'res.partner'
-
      x_field = fields.Char('X Field')
      hs_analytics_num_event_completions = fields.Integer('Number of event completions')
      num_notes = fields.Integer("Number of Sales Activities")
