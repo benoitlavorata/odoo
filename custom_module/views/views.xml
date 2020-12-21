@@ -20,7 +20,6 @@
 						<group>
 							<group>
 								<field name="bus_garage"/>
-								<field name="address2"/>
 							</group>
 							<group>
 								<field name="service_agreement"/>
