@@ -280,7 +280,7 @@ class CustomCompany(models.Model):
                                       help='Please add/select number of lots e.g. lot1, lot2, lot3...')
     lot_1_address = fields.Text("Lot1 Address")
     lot_2_address = fields.Text("Lot2 Address")
-    bus_garage = fields.Char("Bus Garage")
+    bus_garage = fields.Char("Bus Garage Address")
     erie_1_boces = fields.Boolean("ERIE 1 BOCES")
     fleet_size = fields.Selection(FLEET_SIZE, "Fleet Size")
     of_buses = fields.Integer("# of buses")
