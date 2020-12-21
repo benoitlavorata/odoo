@@ -69,6 +69,7 @@
                             </group>
                             <group>
                             	<field name="service_plan" attrs="{'invisible':[('service_plan_type', '=', 'Fleet Inspection')]}" />
+								<field name="fleet_inspection"/>
                                 <field name="service_plan_type" attrs="{'invisible':[('service_plan', '=', False)]}" />
                                 <field name="service_vehicle_num" attrs="{'invisible':[('service_plan_type', '=', False)]}" />
                                 <field name="service_po_received" attrs="{'invisible':[('service_plan', '=', False)]}" />
